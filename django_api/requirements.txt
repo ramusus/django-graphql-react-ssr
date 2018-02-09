@@ -2,6 +2,7 @@ Django
 gunicorn
 psycopg2
 redis
+graphene>=1.4,<2
 graphene_django
 django-filter==0.14.0
 pyyaml

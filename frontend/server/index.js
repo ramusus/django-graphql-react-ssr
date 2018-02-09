@@ -30,7 +30,7 @@ app.use(ApolloReduxReactSSR({
   routes,
   Error500Page,
   networkInterfaceOptions: {
-    uri: 'http://192.168.99.100/graphql',
+    uri: 'http://127.0.0.1:8000/graphql',
     credentials: 'same-origin',
   }
 }))

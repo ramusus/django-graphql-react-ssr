@@ -10,7 +10,7 @@ class Company(models.Model):
 
 class Job(models.Model):
   title = models.TextField()
-  company = models.ForeignKey(Company, related_name='jobs')
+  company = models.ForeignKey(Company, related_name='jobs', on_delete=models.CASCADE)
 
   def __str__(self):
     return self.title

@@ -36,7 +36,7 @@ export default async function reactApp(ctx: Ctx) {
   const client = new ApolloClient({
     ssrMode: true,
     networkInterface: createNetworkInterface({
-      uri: 'http://192.168.99.100/graphql',
+      uri: 'http://127.0.0.1:8000/graphql',
       credentials: 'same-origin',
       headers: ctx.request.headers,
     }),
